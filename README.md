@@ -4,6 +4,7 @@ Simple iOS 10 style Notifications
 
 **EMNotifications** is a very simple iOS 10 style in-app notifications.
 
+EMNotifications supports pan gesture. If you swipe notification to top it will be dismissed
 
 ![EMNotification preview](https://raw.githubusercontent.com/em0072/EMNotification/master/Simulator%20Screen%20Shot%2022%20Aug%202016%2014.59.58.png)
 
