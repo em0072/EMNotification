@@ -12,6 +12,7 @@
 		909B6A221D674C76003BF482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909B6A201D674C76003BF482 /* Main.storyboard */; };
 		909B6A241D674C76003BF482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909B6A231D674C76003BF482 /* Assets.xcassets */; };
 		909B6A271D674C76003BF482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909B6A251D674C76003BF482 /* LaunchScreen.storyboard */; };
+		909B6A2F1D674D15003BF482 /* EMNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B6A2E1D674D15003BF482 /* EMNotify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		909B6A231D674C76003BF482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		909B6A261D674C76003BF482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		909B6A281D674C76003BF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		909B6A2E1D674D15003BF482 /* EMNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMNotify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				909B6A1C1D674C76003BF482 /* AppDelegate.swift */,
 				909B6A1E1D674C76003BF482 /* ViewController.swift */,
+				909B6A2E1D674D15003BF482 /* EMNotify.swift */,
 				909B6A201D674C76003BF482 /* Main.storyboard */,
 				909B6A231D674C76003BF482 /* Assets.xcassets */,
 				909B6A251D674C76003BF482 /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					909B6A181D674C76003BF482 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 65952893XA;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			files = (
 				909B6A1F1D674C76003BF482 /* ViewController.swift in Sources */,
 				909B6A1D1D674C76003BF482 /* AppDelegate.swift in Sources */,
+				909B6A2F1D674D15003BF482 /* EMNotify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PushNotificationSticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mitko.PushNotificationSticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PushNotificationSticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mitko.PushNotificationSticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

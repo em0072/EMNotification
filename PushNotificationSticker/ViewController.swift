@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, EMNotifyDelegate {
+    
+    let notifier = EMNotify()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        notifier.delegate = self
+        
+        self.view.backgroundColor = UIColor.blueColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +24,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func notificationDidDismissed() {
+        
+    }
+    
+    func notificationWillBeDisplaied() {
 
+    }
+
+    func notificationIsDisplayed() {
+        
+    }
+
+    @IBAction func buttonTapped(sender: AnyObject) {
+            notifier.addNotification()
+            print("Show notification")
+    }
 
 }
 

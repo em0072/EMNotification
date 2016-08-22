@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushNotificationSticker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone-6s-Fish-Red-Wallpaper-576x1024" translatesAutoresizingMaskIntoConstraints="NO" id="9F3-r1-2jh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awV-7c-UnW">
+                                <rect key="frame" x="267" y="285" width="67" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Notify me"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oN-Op-ElQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9F3-r1-2jh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6dP-ll-diV"/>
+                            <constraint firstItem="awV-7c-UnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Da2-6u-chU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9F3-r1-2jh" secondAttribute="bottom" id="Dbx-aO-JNJ"/>
+                            <constraint firstItem="9F3-r1-2jh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e6k-G1-HjH"/>
+                            <constraint firstAttribute="trailing" secondItem="9F3-r1-2jh" secondAttribute="trailing" id="qWB-Qv-OL8"/>
+                            <constraint firstItem="awV-7c-UnW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z4w-bz-U4o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="565" y="378"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone-6s-Fish-Red-Wallpaper-576x1024" width="576" height="1024"/>
+    </resources>
 </document>
