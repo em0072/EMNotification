@@ -48,7 +48,7 @@ class EMNotify: UIView {
         self.center = CGPoint(x: self.getScreenCenter() , y: -(self.getNotificationHeight() / 2))
 //        self.backgroundColor = UIColor.redColor()
 
-        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: style))
+        let visualEffectView = UIVisualEffectView(effect: UIVibrancyEffect(forBlurEffect: UIBlurEffect(style: .Light)))
         visualEffectView.frame = self.bounds
         self.addSubview(visualEffectView)
         
